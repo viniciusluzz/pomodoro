@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000C20;
+    color: #FFFAE0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 10px;
+}
+
+
+.bt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+    background-color: #EF3340;
+    border: #FFFAE0 solid 8px;
+    border-radius: 40px;
+    font-size: 30%;
+}
+@keyframes changeBt{
+    from {width: 70px; height: 70px; border-radius: 40px;
+        border-width: 8px; font-size: 30%;}
+
+    to {width: 100px; height: 100px; border-radius: 
+        60px; border-width: 15px; font-size: 40%;}
+}
+
+@keyframes BtHover{
+    from {width: 600px; height: 600px; border-radius: 350px;
+        border-width: 25px;}
+
+    to {width: 650px; height: 650px; border-radius: 
+        500px; border-width: 50px;}
+}
+
+.bt:hover{
+    animation-name: changeBt;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.bt:active{
+    background-color: #FFFAE0;
+}
+
+.fundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px;
+
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+    background-color: #EF3340;
+    border: #FFFAE0 solid 25px;
+    border-radius: 350px;
+
+}
+
+.fundo:active{
+    animation-name: BtHover;
+    animation-duration: 0.1s;
+    animation-timing-function: ease;
+}
+
+.clock {
+    font-family: 'Silkscreen', cursive;
+    font-size: 300%;
+}
+
+
+@media screen and (max-width:550px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+    html {
+        font-size: 10px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #000C20;
+        color: #FFFAE0;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 50px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        grid-column-gap: 10px;
+    }
+
+    .bt {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 70px;
+        height: 70px;
+        background-color: #EF3340;
+        border: #FFFAE0 solid 8px;
+        border-radius: 40px;
+        font-size: 30%;
+    }
+
+    .fundo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 20px;
+
+        overflow: hidden;
+        width: 350px;
+        height: 350px;
+        background-color: #EF3340;
+        border: #FFFAE0 solid 12px;
+        border-radius: 250px;
+    }
+
+    .clock {
+        font-size: 180%;
+        font-family: 'Silkscreen', cursive;
+    }
+
+    @keyframes changeBt{
+        from {width: 70px; height: 70px; border-radius: 40px;
+            border-width: 8px; font-size: 30%;}
+    
+        to {width: 80px; height: 80px; border-radius: 
+            50px; border-width: 10px; font-size: 35%;}
+    }
+    
+    @keyframes BtHover{
+        from {width: 350px; height: 350px; border-radius: 250px;
+            border-width: 12px;}
+    
+        to {width: 450px; height: 450px; border-radius: 
+            350px; border-width: 30px;}
+    }
+    
+    .bt:hover{
+        animation-name: changeBt;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+    }
+    
+    .bt:active{
+        background-color: #FFFAE0;
+    }
+
+    .fundo:active{
+        animation-name: BtHover;
+        animation-duration: 0.1s;
+        animation-timing-function: ease;
+    }
+        
+
+}
